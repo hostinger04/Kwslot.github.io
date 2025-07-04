@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKY77 - Situs Slot Online Terpercaya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <style>
+        :root {
+            --primary-dark: #0a1128;
+            --primary-blue: #0066cc;
+            --neon-blue: #00a8ff;
+            --neon-yellow: #ffd700;
+            --text-white: #ffffff;
+            --text-gray: #cccccc;
+            --bg-gradient: linear-gradient(135deg, #0a1128 0%, #1a237e 100%);
+            --card-bg: rgba(0, 40, 104, 0.5);
+            --glow-effect: 0 0 10px rgba(0, 168, 255, 0.8);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: var(--bg-gradient);
+            color: var(--text-white);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCI+PHBhdGggZD0iTTAgMCBMIDEwMCAxMDAgTSAxMDAgMCBMIDAgMTAwIiBzdHJva2U9InJnYmEoMCwxNjgsMjU1LDAuMDMpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcGF0dGVybikiLz48L3N2Zz4=');
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: rgba(10, 17, 40, 0.9);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            border-bottom: 1px solid var(--neon-blue);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--neon-blue);
+            text-shadow: var(--glow-effect);
+        }
+
+        .logo i {
+            margin-right: 10px;
+            font-size: 32px;
+        }
+
+        .auth-buttons {
+            display: flex;
+            align-items: center;
+        }
+
+        .auth-buttons input {
+            padding: 8px 12px;
+            margin: 0 5px;
+            border-radius: 5px;
+            border: 1px solid var(--neon-blue);
+            background-color: rgba(0, 0, 0, 0.3);
+            color: var(--text-white);
+            outline: none;
+        }
+
+        .auth-buttons input::placeholder {
+            color: var(--text-gray);
+        }
+
+        .btn {
+            padding: 8px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 0 5px;
+        }
+
+        .btn-login {
+            background-color: var(--neon-blue);
+            color: var(--primary-dark);
+        }
+
+        .btn-register {
+            background-color: var(--neon-yellow);
+            color: var(--primary-dark);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 168, 255, 0.5);
+        }
+
+        .language-selector {
+            margin-left: 15px;
+            color: var(--text-white);
+            cursor: pointer;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary-blue);
+            padding: 10px 0;
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .nav-container {
+            display: inline-flex;
+            padding: 0 20px;
+        }
+
+        .nav-item {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 10px;
+            color: var(--text-white);
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-item i {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .nav-item:hover {
+            color: var(--neon-yellow);
+            transform: translateY(-3px);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: fixed;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 40, 104, 0.7);
+            border-radius: 10px;
+            padding: 10px 5px;
+            z-index: 999;
+            box-shadow: 0 0 20px rgba(0, 168, 255, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sidebar-item {
+            width: 40px;
+            height: 40px;
+            margin: 8px 0;
+            border-radius: 50%;
+            background-color: var(--card-bg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .sidebar-item i {
+            font-size: 18px;
+            color: var(--text-white);
+        }
+
+        .sidebar-item:hover {
+            background-color: var(--neon-blue);
+            transform: scale(1.1);
+            box-shadow: var(--glow-effect);
+        }
+
+        .sidebar-item::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            left: 50px;
+            background-color: var(--primary-dark);
+            color: var(--text-white);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .sidebar-item:hover::after {
+            opacity: 1;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Jackpot Section */
+        .jackpot-section {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            border: 1px solid var(--neon-blue);
+            box-shadow: var(--glow-effect);
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .section-title {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--neon-yellow);
+            margin-bottom: 15px;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .jackpot-amount {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 32px;
+            color: var(--neon-blue);
+            text-shadow: 0 0 10px rgba(0, 168, 255, 0.8);
+            margin-bottom: 10px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .rtp-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .rtp-info span {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--neon-blue);
+            font-size: 24px;
+            margin-left: 10px;
+        }
+
+        /* Promo Slider */
+        .promo-slider {
+            margin-bottom: 30px;
+        }
+
+        .swiper-slide {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid var(--neon-blue);
+            box-shadow: var(--glow-effect);
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .promo-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: var(--neon-yellow);
+            color: var(--primary-dark);
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* Game Providers */
+        .providers-section {
+            margin-bottom: 30px;
+        }
+
+        .providers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .provider-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid var(--neon-blue);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .provider-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--glow-effect);
+        }
+
+        .provider-logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .provider-name {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--neon-yellow);
+        }
+
+        .play-btn {
+            background-color: var(--neon-blue);
+            color: var(--primary-dark);
+            border: none;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .play-btn:hover {
+            background-color: var(--neon-yellow);
+        }
+
+        /* Payment Methods */
+        .payment-section {
+            margin-bottom: 30px;
+        }
+
+        .payment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 15px;
+        }
+
+        .payment-method {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid var(--neon-blue);
+            transition: all 0.3s ease;
+        }
+
+        .payment-method:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--glow-effect);
+        }
+
+        .payment-logo {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            margin-bottom: 5px;
+        }
+
+        .payment-name {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .status-indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #00ff00;
+            margin-top: 5px;
+            box-shadow: 0 0 5px #00ff00;
+        }
+
+        /* Recent Winners */
+        .winners-section {
+            margin-bottom: 30px;
+        }
+
+        .winners-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid var(--neon-blue);
+        }
+
+        .winners-table th, .winners-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(0, 168, 255, 0.3);
+        }
+
+        .winners-table th {
+            background-color: rgba(0, 104, 255, 0.3);
+            color: var(--neon-yellow);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 14px;
+        }
+
+        .winners-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .winners-table tr:hover {
+            background-color: rgba(0, 168, 255, 0.1);
+        }
+
+        .username {
+            color: var(--neon-blue);
+        }
+
+        .win-amount {
+            color: var(--neon-yellow);
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px 20px;
+            border-top: 1px solid var(--neon-blue);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+
+        .footer-section h3 {
+            color: var(--neon-yellow);
+            margin-bottom: 15px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 18px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section ul li a {
+            color: var(--text-gray);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--neon-blue);
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0, 168, 255, 0.3);
+            color: var(--text-gray);
+            font-size: 12px;
+        }
+
+        /* Live Chat */
+        .live-chat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: var(--neon-blue);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 0 20px rgba(0, 168, 255, 0.7);
+            z-index: 999;
+            animation: pulse 2s infinite;
+        }
+
+        .live-chat i {
+            font-size: 24px;
+            color: var(--primary-dark);
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .logo {
+                margin-bottom: 10px;
+            }
+
+            .auth-buttons {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .auth-buttons input {
+                width: 100%;
+                margin: 5px 0;
+            }
+
+            .btn {
+                width: 100%;
+                margin: 5px 0;
+            }
+
+            .language-selector {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            .sidebar {
+                display: none;
+            }
+
+            .providers-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .payment-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .winners-table {
+                font-size: 12px;
+            }
+
+            .winners-table th, .winners-table td {
+                padding: 8px 10px;
+            }
+        }
+
+        /* Animations */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* Badges */
+        .badge {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .badge-new {
+            background-color: #00ff00;
+            color: #000;
+        }
+
+        .badge-hot {
+            background-color: #ff0000;
+            color: #fff;
+        }
+
+        .badge-promo {
+            background-color: #ffcc00;
+            color: #000;
+        }
+
+        /* Game Categories */
+        .category-section {
+            margin-bottom: 30px;
+        }
+
+        .category-tabs {
+            display: flex;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--neon-blue);
+        }
+
+        .category-tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .category-tab.active {
+            border-bottom: 3px solid var(--neon-yellow);
+            color: var(--neon-yellow);
+        }
+
+        .category-tab:hover {
+            color: var(--neon-blue);
+        }
+
+        .category-content {
+            display: none;
+        }
+
+        .category-content.active {
+            display: block;
+        }
+
+        /* Game Card */
+        .game-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid var(--neon-blue);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--glow-effect);
+        }
+
+        .game-image {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .game-info {
+            padding: 10px;
+        }
+
+        .game-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .game-provider {
+            font-size: 12px;
+            color: var(--text-gray);
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1001;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: var(--primary-dark);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 500px;
+            width: 90%;
+            border: 2px solid var(--neon-blue);
+            box-shadow: var(--glow-effect);
+            position: relative;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--neon-blue);
+        }
+
+        /* Login Form */
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-form input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid var(--neon-blue);
+            background-color: rgba(0, 0, 0, 0.3);
+            color: var(--text-white);
+            outline: none;
+        }
+
+        .login-form button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: var(--neon-blue);
+            color: var(--primary-dark);
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .login-form button:hover {
+            background-color: var(--neon-yellow);
+        }
+
+        /* RTP Modal */
+        .rtp-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .rtp-table th, .rtp-table td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid rgba(0, 168, 255, 0.3);
+        }
+
+        .rtp-table th {
+            background-color: rgba(0, 104, 255, 0.3);
+            color: var(--neon-yellow);
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fas fa-dice"></i> SKY77
+        </div>
+        <div class="auth-buttons">
+            <input type="text" placeholder="Nama Pengguna" id="username-input">
+            <input type="password" placeholder="Kata Sandi" id="password-input">
+            <button class="btn btn-login" id="login-btn">MASUK</button>
+            <button class="btn btn-register" id="register-btn">DAFTAR</button>
+            <div class="language-selector">
+                <i class="fas fa-globe"></i> ID
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>Beranda</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-running"></i>
+                <span>Sports</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-coins"></i>
+                <span>Casino</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-sliders-h"></i>
+                <span>Slot</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-ticket-alt"></i>
+                <span>Togel</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-spade"></i>
+                <span>Poker</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-cocktail"></i>
+                <span>Sabung Ayam</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-fish"></i>
+                <span>Tembak Ikan</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-gamepad"></i>
+                <span>Games</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-gift"></i>
+                <span>Promosi</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-users"></i>
+                <span>Referral</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-item" data-tooltip="RTP Live" id="rtp-btn">
+            <i class="fas fa-chart-line"></i>
+        </div>
+        <div class="sidebar-item" data-tooltip="Telegram">
+            <i class="fab fa-telegram"></i>
+        </div>
+        <div class="sidebar-item" data-tooltip="Facebook">
+            <i class="fab fa-facebook"></i>
+        </div>
+        <div class="sidebar-item" data-tooltip="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="sidebar-item" data-tooltip="Info">
+            <i class="fas fa-info-circle"></i>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Jackpot Section -->
+        <section class="jackpot-section" data-aos="fade-up">
+            <h2 class="section-title">Progressive Jackpot</h2>
+            <div class="jackpot-amount" id="jackpot-counter">17,515,667,710.58</div>
+            <div class="rtp-info">
+                <span>LIVE RTP SKY77</span>
+                <span>98.8%</span>
+            </div>
+        </section>
+
+        <!-- Promo Slider -->
+        <section class="promo-slider" data-aos="fade-up">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://via.placeholder.com/800x300/0066cc/ffffff?text=Bonus+Deposit+25%" alt="Promo 1">
+                        <div class="promo-badge">HOT</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://via.placeholder.com/800x300/0066cc/ffffff?text=FreeSpin+100%" alt="Promo 2">
+                        <div class="promo-badge">NEW</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://via.placeholder.com/800x300/0066cc/ffffff?text=Bonus+Referral+50%" alt="Promo 3">
+                        <div class="promo-badge">PROMO</div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Game Categories -->
+        <section class="category-section" data-aos="fade-up">
+            <div class="category-tabs">
+                <div class="category-tab active" data-tab="slot">Slot</div>
+                <div class="category-tab" data-tab="live">Live Casino</div>
+                <div class="category-tab" data-tab="sports">Sports</div>
+                <div class="category-tab" data-tab="fishing">Tembak Ikan</div>
+            </div>
+            
+            <div class="category-content active" id="slot-content">
+                <div class="providers-grid">
+                    <div class="provider-card">
+                        <img src="https://via.placeholder.com/100/0066cc/ffffff?text=Pragmatic" alt="Pragmatic Play" class="provider-logo">
+                        <div class="provider-name">Pragmatic Play</div>
+                        <button class="play-btn">MAIN SEKARANG</button>
+                        <div class="badge badge-hot">HOT</div>
+                    </div>
+                    <div class="provider-card">
+                        <img src="https://via.placeholder.com/100/0066cc/ffffff?text=PG+Soft" alt="PG Soft" class="provider-logo">
+                        <div class="provider-name">PG Soft</div>
+                        <button class="play-btn">MAIN SEKARANG</button>
+                    </div>
+                    <div class="provider-card">
+                        <img src="https://via.placeholder.com/100/0066cc/ffffff?text=Habanero" alt="Habanero" class="provider-logo">
+                        <div class="provider-name">Habanero</div>
+                        <button class="play-btn">MAIN SEKARANG</button>
+                    </div>
+                    <div class="provider-card">
+                        <img src="https://via.placeholder.com/100/0066cc/ffffff?text=Microgaming" alt="Microgaming" class="provider-logo">
+                        <div class="provider-name">Microgaming</div>
+                        <button class="play-btn">MAIN SEKARANG</button>
+                    </div>
+                    <div class="provider-card">
+                        <img src="https://via.placeholder.com/100/0066cc/ffffff?text=Spadegaming" alt="Spadegaming" class="provider-logo">
+                        <div class="provider-name">Spadegaming</div>
+                        <button class="play-btn">MAIN SEKARANG</button>
+                        <div class="badge badge-new">NEW</div>
+                    </div>
+                    <div class="provider-card">
+                        <img src="https://via.placeholder.com/100/0066cc/ffffff?text=Joker" alt="Joker" class="provider-logo">
+                        <div class="provider-name">Joker</div>
+                        <button class="play-btn">MAIN SEKARANG</button>
+                    </div>
+                    <div class="provider-card">
+                        <img src="https://via.placeholder.com/100/0066cc/ffffff?text=JILI" alt="JILI" class="provider-logo">
+                        <div class="provider-name">JILI</div>
+                        <button class="play-btn">MAIN SEKARANG</button>
+                    </div>
+                    <div class="provider-card">
+                        <img src="https://via.placeholder.com/100/0066cc/ffffff?text=Playtech" alt="Playtech" class="provider-logo">
+                        <div class="provider-name">Playtech</div>
+                        <button class="play-btn">MAIN SEKARANG</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="category-content" id="live-content">
+                <div class="providers-grid">
+                    <div class="provider-card">
+                        <img src="https://via.placeholder.com/100/0066cc/ffffff?text=Evolution" alt="Evolution" class="provider-logo">
+                        <div class="provider-name">Evolution</div>
+                        <button class="play-btn">MAIN SEKARANG</button>
+                        <div class="badge badge-hot">HOT</div>
+                    </div>
+                    <div class="provider-card">
+                        <img src="https://via.placeholder.com/100/0066cc/ffffff?text=Sexy+Baccarat" alt="Sexy Baccarat" class="provider-logo">
+                        <div class="provider-name">Sexy Baccarat</div>
+                        <button class="play-btn">MAIN SEKARANG</button>
+                    </div>
+                    <div class="provider-card">
+                        <img src="https://via.placeholder.com/100/0066cc/ffffff?text=Dream+Gaming" alt="Dream Gaming" class="provider-logo">
+                        <div class="provider-name">Dream Gaming</div>
+                        <button class="play-btn">MAIN SEKARANG</button>
+                    </div>
+                    <div class="provider-card">
+                        <img src="https://via.placeholder.com/100/0066cc/ffffff?text=Allbet" alt="Allbet" class="provider-logo">
+                        <div class="provider-name">Allbet</div>
+                        <button class="play-btn">MAIN SEKARANG</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="category-content" id="sports-content">
+                <div class="providers-grid">
+                    <div class="provider-card">
+                        <img src="https://via.placeholder.com/100/0066cc/ffffff?text=SBOBET" alt="SBOBET" class="provider-logo">
+                        <div class="provider-name">SBOBET</div>
+                        <button class="play-btn">MAIN SEKARANG</button>
+                        <div class="badge badge-hot">HOT</div>
+                    </div>
+                    <div class="provider-card">
+                        <img src="https://via.placeholder.com/100/0066cc/ffffff?text=CMD368" alt="CMD368" class="provider-logo">
+                        <div class="provider-name">CMD368</div>
+                        <button class="play-btn">MAIN SEKARANG</button>
+                    </div>
+                    <div class="provider-card">
+                        <img src="https://via.placeholder.com/100/0066cc/ffffff?text=TFGaming" alt="TFGaming" class="provider-logo">
+                        <div class="provider-name">TFGaming</div>
+                        <button class="play-btn">MAIN SEKARANG</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="category-content" id="fishing-content">
+                <div class="providers-grid">
+                    <div class="provider-card">
+                        <img src="https://via.placeholder.com/100/0066cc/ffffff?text=JILI+Fishing" alt="JILI Fishing" class="provider-logo">
+                        <div class="provider-name">JILI Fishing</div>
+                        <button class="play-btn">MAIN SEKARANG</button>
+                        <div class="badge badge-hot">HOT</div>
+                    </div>
+                    <div class="provider-card">
+                        <img src="https://via.placeholder.com/100/0066cc/ffffff?text=FA+Chai" alt="FA Chai" class="provider-logo">
+                        <div class="provider-name">FA Chai</div>
+                        <button class="play-btn">MAIN SEKARANG</button>
+                    </div>
+                    <div class="provider-card">
+                        <img src="https://via.placeholder.com/100/0066cc/ffffff?text=Spadegaming" alt="Spadegaming" class="provider-logo">
+                        <div class="provider-name">Spadegaming</div>
+                        <button class="play-btn">MAIN SEKARANG</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Games -->
+        <section class="providers-section" data-aos="fade-up">
+            <h2 class="section-title">Game Populer Hari Ini</h2>
+            <div class="providers-grid">
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300/0066cc/ffffff?text=Gates+of+Olympus" alt="Gates of Olympus" class="game-image">
+                    <div class="game-info">
+                        <div class="game-title">Gates of Olympus</div>
+                        <div class="game-provider">Pragmatic Play</div>
+                        <div class="badge badge-hot">HOT</div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300/0066cc/ffffff?text=Sweet+Bonanza" alt="Sweet Bonanza" class="game-image">
+                    <div class="game-info">
+                        <div class="game-title">Sweet Bonanza</div>
+                        <div class="game-provider">Pragmatic Play</div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300/0066cc/ffffff?text=Starlight+Princess" alt="Starlight Princess" class="game-image">
+                    <div class="game-info">
+                        <div class="game-title">Starlight Princess</div>
+                        <div class="game-provider">Pragmatic Play</div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300/0066cc/ffffff?text=5+Lions+Megaways" alt="5 Lions Megaways" class="game-image">
+                    <div class="game-info">
+                        <div class="game-title">5 Lions Megaways</div>
+                        <div class="game-provider">PG Soft</div>
+                        <div class="badge badge-new">NEW</div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300/0066cc/ffffff?text=Mahjong+Ways+2" alt="Mahjong Ways 2" class="game-image">
+                    <div class="game-info">
+                        <div class="game-title">Mahjong Ways 2</div>
+                        <div class="game-provider">PG Soft</div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300/0066cc/ffffff?text=Koi+Gate" alt="Koi Gate" class="game-image">
+                    <div class="game-info">
+                        <div class="game-title">Koi Gate</div>
+                        <div class="game-provider">Habanero</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Methods -->
+        <section class="payment-section" data-aos="fade-up">
+            <h2 class="section-title">Metode Pembayaran</h2>
+            <div class="payment-grid">
+                <div class="payment-method">
+                    <img src="https://via.placeholder.com/50/0066cc/ffffff?text=BCA" alt="BCA" class="payment-logo">
+                    <div class="payment-name">BCA</div>
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="payment-method">
+                    <img src="https://via.placeholder.com/50/0066cc/ffffff?text=BNI" alt="BNI" class="payment-logo">
+                    <div class="payment-name">BNI</div>
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="payment-method">
+                    <img src="https://via.placeholder.com/50/0066cc/ffffff?text=Mandiri" alt="Mandiri" class="payment-logo">
+                    <div class="payment-name">Mandiri</div>
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="payment-method">
+                    <img src="https://via.placeholder.com/50/0066cc/ffffff?text=BRI" alt="BRI" class="payment-logo">
+                    <div class="payment-name">BRI</div>
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="payment-method">
+                    <img src="https://via.placeholder.com/50/0066cc/ffffff?text=Dana" alt="Dana" class="payment-logo">
+                    <div class="payment-name">Dana</div>
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="payment-method">
+                    <img src="https://via.placeholder.com/50/0066cc/ffffff?text=Gopay" alt="Gopay" class="payment-logo">
+                    <div class="payment-name">Gopay</div>
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="payment-method">
+                    <img src="https://via.placeholder.com/50/0066cc/ffffff?text=OVO" alt="OVO" class="payment-logo">
+                    <div class="payment-name">OVO</div>
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="payment-method">
+                    <img src="https://via.placeholder.com/50/0066cc/ffffff?text=LinkAja" alt="LinkAja" class="payment-logo">
+                    <div class="payment-name">LinkAja</div>
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="payment-method">
+                    <img src="https://via.placeholder.com/50/0066cc/ffffff?text=QRIS" alt="QRIS" class="payment-logo">
+                    <div class="payment-name">QRIS</div>
+                    <div class="status-indicator"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Winners -->
+        <section class="winners-section" data-aos="fade-up">
+            <h2 class="section-title">Pemenang Terkini</h2>
+            <table class="winners-table">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Taruhan</th>
+                        <th>Menang</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="username">tur****k</td>
+                        <td>Rp 4.000</td>
+                        <td class="win-amount">Rp 2.195.200</td>
+                    </tr>
+                    <tr>
+                        <td class="username">your***3</td>
+                        <td>Rp 10.000</td>
+                        <td class="win-amount">Rp 1.344.500</td>
+                    </tr>
+                    <tr>
+                        <td class="username">her****n_c</td>
+                        <td>Rp 3.750</td>
+                        <td class="win-amount">Rp 1.283.350</td>
+                    </tr>
+                    <tr>
+                        <td class="username">kk****ng</td>
+                        <td>Rp 40.000</td>
+                        <td class="win-amount">Rp 5.960.000</td>
+                    </tr>
+                    <tr>
+                        <td class="username">rq****ng</td>
+                        <td>Rp 10.000</td>
+                        <td class="win-amount">Rp 3.167.000</td>
+                    </tr>
+                    <tr>
+                        <td class="username">*********</td>
+                        <td>Rp 4.000</td>
+                        <td class="win-amount">Rp 5.400.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tentang SKY77</h3>
+                <ul>
+                    <li><a href="#">Profil Perusahaan</a></li>
+                    <li><a href="#">Lisensi Resmi</a></li>
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                    <li><a href="#">Syarat & Ketentuan</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Bantuan</h3>
+                <ul>
+                    <li><a href="#">Cara Deposit</a></li>
+                    <li><a href="#">Cara Withdraw</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Live Chat</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Permainan</h3>
+                <ul>
+                    <li><a href="#">Slot Online</a></li>
+                    <li><a href="#">Live Casino</a></li>
+                    <li><a href="#">Sportsbook</a></li>
+                    <li><a href="#">Tembak Ikan</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Hubungi Kami</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                    <li><a href="#"><i class="fab fa-telegram"></i> Telegram</a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023 SKY77 - All Rights Reserved. | 18+ Only</p>
+        </div>
+    </footer>
+
+    <!-- Live Chat -->
+    <div class="live-chat">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 style="color: var(--neon-blue); margin-bottom: 20px;">MASUK KE AKUN ANDA</h2>
+            <form class="login-form">
+                <input type="text" placeholder="Nama Pengguna" required>
+                <input type="password" placeholder="Kata Sandi" required>
+                <button type="submit">MASUK</button>
+            </form>
+            <p style="text-align: center; margin-top: 15px; color: var(--text-gray);">
+                Lupa kata sandi? <a href="#" style="color: var(--neon-blue);">Klik disini</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="register-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 style="color: var(--neon-yellow); margin-bottom: 20px;">DAFTAR AKUN BARU</h2>
+            <form class="login-form">
+                <input type="text" placeholder="Nama Lengkap" required>
+                <input type="text" placeholder="Nama Pengguna" required>
+                <input type="password" placeholder="Kata Sandi" required>
+                <input type="text" placeholder="Nomor WhatsApp" required>
+                <input type="text" placeholder="Kode Referral (Opsional)">
+                <button type="submit" style="background-color: var(--neon-yellow);">DAFTAR SEKARANG</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- RTP Modal -->
+    <div class="modal" id="rtp-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 style="color: var(--neon-blue); margin-bottom: 20px;">LIVE RTP GAME</h2>
+            <table class="rtp-table">
+                <thead>
+                    <tr>
+                        <th>Nama Game</th>
+                        <th>RTP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gates of Olympus</td>
+                        <td>96.5%</td>
+                    </tr>
+                    <tr>
+                        <td>Sweet Bonanza</td>
+                        <td>96.5%</td>
+                    </tr>
+                    <tr>
+                        <td>Starlight Princess</td>
+                        <td>96.5%</td>
+                    </tr>
+                    <tr>
+                        <td>5 Lions Megaways</td>
+                        <td>96.5%</td>
+                    </tr>
+                    <tr>
+                        <td>Mahjong Ways 2</td>
+                        <td>96.5%</td>
+                    </tr>
+                    <tr>
+                        <td>Koi Gate</td>
+                        <td>96.5%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Jackpot counter animation
+        function animateJackpot() {
+            const jackpotElement = document.getElementById('jackpot-counter');
+            let currentValue = parseFloat(jackpotElement.textContent.replace(/,/g, ''));
+            const increment = 12345.67;
+            
+            setInterval(() => {
+                currentValue += increment;
+                jackpotElement.textContent = currentValue.toLocaleString('en-US', {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2
+                });
+            }, 1000);
+        }
+
+        // Category tabs functionality
+        const tabs = document.querySelectorAll('.category-tab');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs and contents
+                document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.category-content').forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked tab and corresponding content
+                tab.classList.add('active');
+                const tabId = tab.getAttribute('data-tab');
+                document.getElementById(`${tabId}-content`).classList.add('active');
+            });
+        });
+
+        // Modal functionality
+        const loginBtn = document.getElementById('login-btn');
+        const registerBtn = document.getElementById('register-btn');
+        const rtpBtn = document.getElementById('rtp-btn');
+        const loginModal = document.getElementById('login-modal');
+        const registerModal = document.getElementById('register-modal');
+        const rtpModal = document.getElementById('rtp-modal');
+        const closeButtons = document.querySelectorAll('.close-modal');
+
+        loginBtn.addEventListener('click', () => {
+            loginModal.style.display = 'flex';
+        });
+
+        registerBtn.addEventListener('click', () => {
+            registerModal.style.display = 'flex';
+        });
+
+        rtpBtn.addEventListener('click', () => {
+            rtpModal.style.display = 'flex';
+        });
+
+        closeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                loginModal.style.display = 'none';
+                registerModal.style.display = 'none';
+                rtpModal.style.display = 'none';
+            });
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === loginModal) loginModal.style.display = 'none';
+            if (e.target === registerModal) registerModal.style.display = 'none';
+            if (e.target === rtpModal) rtpModal.style.display = 'none';
+        });
+
+        // Live chat click handler
+        document.querySelector('.live-chat').addEventListener('click', () => {
+            alert('Live chat akan membuka WhatsApp support kami');
+            // In a real implementation, this would open a chat window or WhatsApp link
+        });
+
+        // Start animations when page loads
+        window.addEventListener('load', () => {
+            animateJackpot();
+        });
+    </script>
+</body>
+</html>
